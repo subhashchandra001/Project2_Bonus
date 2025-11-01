@@ -1,11 +1,4 @@
-# Project 2 Bonus: Hybrid Deliberative–Reactive Robotics using ROS & Gazebo
-
-**Author:** Subhash Chandra
-**Course:** CS 5023 / 4023 – Introduction to Intelligent Robotics
-**Institution:** The University of Oklahoma
-**Semester:** Fall 2025
-
----
+# Project 2 Bonus: Hybrid Deliberative Reactive Robotics using ROS & Gazebo
 
 ## Overview
 
