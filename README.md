@@ -2,27 +2,27 @@
 
 ## Overview
 
-This project implements a **Hybrid Deliberative–Reactive Architecture** for autonomous robot control using **ROS Melodic** and **Gazebo**.
-A simulated **TurtleBot 2** (Kobuki base with ASUS Xtion sensor) operates within a mapped environment to perform multiple goal-directed navigation tasks.
+This project implements a Hybrid Deliberative–Reactive Architecture for autonomous robot control using ROS Melodic and Gazebo.
+A simulated TurtleBot 2 (Kobuki base with ASUS Xtion sensor) operates within a mapped environment to perform multiple goal-directed navigation tasks.
 
-The system integrates **high-level deliberation (task and path planning)** with **low-level reactive behaviors (collision avoidance and teleoperation)**.
+The system integrates high-level deliberation (task and path planning) with low-level reactive behaviors (collision avoidance and teleoperation).
 It demonstrates how deliberative reasoning can be effectively combined with reactive execution in robotics.
 
 ---
 
 ## Objectives
 
-1. Develop an autonomous robot that can **plan and execute multiple navigation tasks**.
-2. Integrate **task planning**, **path planning**, **execution monitoring**, and **reactive control** within a unified ROS framework.
-3. Perform **simultaneous localization and mapping (SLAM)** using the GMapping algorithm.
-4. Visualize robot movement, sensor data, and map generation in **RViz**.
+1. Develop an autonomous robot that can plan and execute multiple navigation tasks.
+2. Integrate task planning, path planning, execution monitoring, and reactive control within a unified ROS framework.
+3. Perform simultaneous localization and mapping (SLAM) using the GMapping algorithm.
+4. Visualize robot movement, sensor data, and map generation in RViz.
 5. Evaluate the system’s ability to recover from navigation failures through execution monitoring.
 
 ---
 
 ## System Architecture
 
-The architecture consists of **four primary functional nodes**:
+The architecture consists of four primary functional nodes:
 
 | Layer                          | Node                     | Description                                                                      |
 | ------------------------------ | ------------------------ | -------------------------------------------------------------------------------- |
@@ -71,8 +71,8 @@ Auxiliary nodes:
 
 ## Environment & Coordinates
 
-* The simulation world replicates a **15 × 20 ft** environment with a rectangular room and hallway (same as Project 1).
-* Coordinates are expressed in **feet**, with `(0, 0)` at the lower-left corner.
+* The simulation world replicates a 15 × 20 ft environment with a rectangular room and hallway (same as Project 1).
+* Coordinates are expressed in feet, with `(0, 0)` at the lower-left corner.
 * The robot’s initial pose and subsequent task goals are specified as ordered pairs of points:
 
 ```
@@ -143,7 +143,7 @@ Enter task pairs in the console as:
 ((x3, y3), (x4, y4))
 ```
 
-Then press **Enter** on a blank line to start execution.
+Then press Enter on a blank line to start execution.
 
 ---
 
@@ -183,11 +183,11 @@ Then press **Enter** on a blank line to start execution.
 
 ## Key Learning Outcomes
 
-1. Integration of **deliberative planning** with **reactive behavior control**.
-2. Implementation of **ROS multi-node architecture** for autonomous navigation.
-3. Application of **GMapping** for SLAM in unknown environments.
-4. Visualization of sensor data and transformation trees using **RViz**.
-5. Understanding of **execution monitoring** and recovery mechanisms in robotics.
+1. Integration of deliberative planning with reactive behavior control.
+2. Implementation of ROS multi-node architecture for autonomous navigation.
+3. Application of GMapping for SLAM in unknown environments.
+4. Visualization of sensor data and transformation trees using RViz.
+5. Understanding of execution monitoring and recovery mechanisms in robotics.
 
 ---
 
