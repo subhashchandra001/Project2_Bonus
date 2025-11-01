@@ -1,4 +1,4 @@
-# 🧠 Project 2 Bonus: Hybrid Deliberative–Reactive Robotics using ROS & Gazebo
+# Project 2 Bonus: Hybrid Deliberative–Reactive Robotics using ROS & Gazebo
 
 **Author:** Subhash Chandra
 **Course:** CS 5023 / 4023 – Introduction to Intelligent Robotics
@@ -7,7 +7,7 @@
 
 ---
 
-## 📘 Overview
+## Overview
 
 This project implements a **Hybrid Deliberative–Reactive Architecture** for autonomous robot control using **ROS Melodic** and **Gazebo**.
 A simulated **TurtleBot 2** (Kobuki base with ASUS Xtion sensor) operates within a mapped environment to perform multiple goal-directed navigation tasks.
@@ -17,7 +17,7 @@ It demonstrates how deliberative reasoning can be effectively combined with reac
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 1. Develop an autonomous robot that can **plan and execute multiple navigation tasks**.
 2. Integrate **task planning**, **path planning**, **execution monitoring**, and **reactive control** within a unified ROS framework.
@@ -27,7 +27,7 @@ It demonstrates how deliberative reasoning can be effectively combined with reac
 
 ---
 
-## 🧩 System Architecture
+## System Architecture
 
 The architecture consists of **four primary functional nodes**:
 
@@ -46,7 +46,7 @@ Auxiliary nodes:
 
 ---
 
-## 🧠 Data Flow Diagram
+## Data Flow Diagram
 
 ```text
        +-------------------+
@@ -76,7 +76,7 @@ Auxiliary nodes:
 
 ---
 
-## 🗺️ Environment & Coordinates
+## Environment & Coordinates
 
 * The simulation world replicates a **15 × 20 ft** environment with a rectangular room and hallway (same as Project 1).
 * Coordinates are expressed in **feet**, with `(0, 0)` at the lower-left corner.
@@ -91,7 +91,7 @@ Leave a blank line after the final pair to trigger the task planner.
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ```
 catkin_wsp1/
@@ -118,7 +118,7 @@ catkin_wsp1/
 
 ---
 
-## ⚙️ How to Run the Project
+## How to Run the Project
 
 ### Step 1: Build the Workspace
 
@@ -154,7 +154,7 @@ Then press **Enter** on a blank line to start execution.
 
 ---
 
-## 🧭 Verification & Debugging
+## Verification & Debugging
 
 | Purpose              | Command                                |
 | -------------------- | -------------------------------------- |
@@ -166,7 +166,7 @@ Then press **Enter** on a blank line to start execution.
 
 ---
 
-## 🧰 Dependencies
+## Dependencies
 
 | Package                                                  | Purpose                  |
 | -------------------------------------------------------- | ------------------------ |
@@ -188,7 +188,7 @@ Then press **Enter** on a blank line to start execution.
 
 ---
 
-## 🧩 Key Learning Outcomes
+## Key Learning Outcomes
 
 1. Integration of **deliberative planning** with **reactive behavior control**.
 2. Implementation of **ROS multi-node architecture** for autonomous navigation.
@@ -198,13 +198,24 @@ Then press **Enter** on a blank line to start execution.
 
 ---
 
-## 👨‍💻 Author
+## A Team Members
 
-**Subhash Chandra**
-Graduate Research Assistant, University of Oklahoma
-Email: [subhash.chandra@ou.edu](mailto:subhash.chandra@ou.edu)
-GitHub: [@subhashchandra001](https://github.com/subhashchandra001)
+Subhash Chandra
 
----
+Brandon Aviles
 
-> *"Hybrid intelligence emerges when deliberation and reaction cooperate harmoniously in autonomous systems."*
+References:
+
+[1]University of Oklahoma, School of Computer Science, CS 4023/5023 Intelligent Robotics – Fall 2024 Project 1: Reactive Robotics Using ROS and TurtleBot (Code Base), Norman, OK, USA, 2024.
+
+[2] Open Robotics, Robot Operating System (ROS) Documentation. [Online]. Available: https://wiki.ros.org
+
+[3] Open Robotics, Gazebo Simulation Environment Documentation. [Online]. Available: https://gazebosim.org
+
+[4] R. A. Brooks, “A Robust Layered Control System for a Mobile Robot,” IEEE J. Robotics and Automation, vol. 2, no. 1, pp. 14–23, 1986.
+
+[5] J. L. Jones, A. M. Flynn, and B. A. Seiger, Mobile Robots: Inspiration to Implementation, 2nd ed. Natick, MA, USA: A K Peters, 1999.
+
+[6] R. R. Murphy, Introduction to AI Robotics. Cambridge, MA, USA: MIT Press, 2000.
+
+
