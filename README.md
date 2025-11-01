@@ -179,7 +179,7 @@ Then press **Enter** on a blank line to start execution.
 
 ---
 
-## 📊 Results
+## Results
 
 * The robot successfully completes multi-task navigation with map-based visualization.
 * Execution monitor detects and reports stalled progress or collision events.
