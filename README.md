@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a Hybrid Deliberative–Reactive Architecture for autonomous robot control using ROS Melodic and Gazebo.
+This project implements a Hybrid Deliberative Reactive Architecture for autonomous robot control using ROS Melodic and Gazebo.
 A simulated TurtleBot 2 (Kobuki base with ASUS Xtion sensor) operates within a mapped environment to perform multiple goal-directed navigation tasks.
 
 The system integrates high-level deliberation (task and path planning) with low-level reactive behaviors (collision avoidance and teleoperation).
