@@ -1,0 +1,13 @@
+<launch>
+    <!-- Launch core robot bringup if using physical TurtleBot (optional) -->
+    <!-- <include file="$(find turtlebot_bringup)/launch/minimal.launch" /> -->
+
+    <!-- Launch your deliberative planner -->
+    <node pkg="project1_pkg" type="deliberative_planner.py" name="deliberative_planner" output="screen" />
+
+    <!-- Optional: visualize in RViz (if needed) -->
+    <!--
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find project1_pkg)/rviz/bonus_project2.rviz" />
+    -->
+</launch>
+

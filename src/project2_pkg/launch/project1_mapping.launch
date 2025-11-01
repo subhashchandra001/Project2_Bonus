@@ -1,0 +1,24 @@
+<launch>
+  <!-- 1. Include your base world launch (spawns world, robot, controller) -->
+  <include file="$(find project1_pkg)/launch/project1_world.launch"/>
+
+  <!-- 2. Run gmapping for SLAM -->
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+    <param name="base_frame" value="base_footprint"/>
+    <param name="odom_frame" value="odom"/>
+    <param name="map_frame" value="map"/>
+    <param name="map_update_interval" value="2.0"/>
+    <param name="maxUrange" value="6.0"/>
+    <param name="maxRange" value="8.0"/>
+    <param name="particles" value="30"/>
+    <param name="xmin" value="-10.0"/>
+    <param name="ymin" value="-10.0"/>
+    <param name="xmax" value="10.0"/>
+    <param name="ymax" value="10.0"/>
+  </node>
+
+  <!-- 3. Start RViz (with config if available) -->
+  <node pkg="rviz" type="rviz" name="rviz"
+        args="-d $(find project1_pkg)/rviz/project1_mapping.rviz"/>
+</launch>
+

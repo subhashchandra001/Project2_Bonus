@@ -1,0 +1,7 @@
+<launch>
+  <node name="deliberative_planner" pkg="project1_pkg" type="deliberative_planner.py" output="screen">
+    <param name="goal_x" value="2.0"/>
+    <param name="goal_y" value="2.0"/>
+  </node>
+</launch>
+

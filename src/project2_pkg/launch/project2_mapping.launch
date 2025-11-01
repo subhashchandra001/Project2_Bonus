@@ -1,0 +1,41 @@
+<launch>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="world_name" value="$(find project2_pkg)/worlds/project2_world.world"/>
+  </include>
+
+  <param name="robot_description"
+         command="$(find xacro)/xacro '$(find turtlebot_description)/robots/kobuki_hexagons_asus_xtion_pro.urdf.xacro'"/>
+
+  <node name="spawn_turtlebot" pkg="gazebo_ros" type="spawn_model"
+        args="-param robot_description -urdf -model turtlebot"
+        respawn="false" output="screen"/>
+
+  <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" output="screen">
+    <param name="base_frame" value="base_footprint"/>
+    <param name="odom_frame" value="odom"/>
+    <param name="map_frame" value="map"/>
+    <param name="delta" value="0.05"/>
+    <param name="xmin" value="-10.0"/>
+    <param name="ymin" value="-10.0"/>
+    <param name="xmax" value="10.0"/>
+    <param name="ymax" value="10.0"/>
+    <param name="map_update_interval" value="3.0"/>
+    <param name="particles" value="80"/>
+    <param name="linearUpdate" value="0.2"/>
+    <param name="angularUpdate" value="0.1"/>
+    <param name="resampleThreshold" value="0.5"/>
+    <remap from="scan" to="/scan"/>
+  </node>
+
+  <node name="reactive_controller" pkg="project2_pkg" type="reactive_controller.py" output="screen"/>
+  <node name="execution_monitor" pkg="project2_pkg" type="execution_monitor.py" output="screen"/>
+
+  <node name="rviz" pkg="rviz" type="rviz"
+        args="-d $(find project2_pkg)/rviz/project2_mapping.rviz"
+        output="screen"/>
+</launch>
+
